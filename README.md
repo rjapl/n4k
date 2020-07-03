@@ -45,4 +45,6 @@ undefined
 
 'number'
 
+* Notes
 
+k.h, k9 \_.so and built nn.so.node are included for reference.
