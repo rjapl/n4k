@@ -1,4 +1,4 @@
-# n4k
+# n4k9
 node module for k9
 
 * Summary
@@ -23,12 +23,23 @@ No other build env dependencies except g++
 g++ -shared -pthread -rdynamic -m64 -I. -I/usr/include/nodejs/include/node -I/usr/include/nodejs/src -I/usr/include/nodejs/deps/uv/include -I/usr/include/nodejs/deps/v8/include -I/YOUR_PATH_node_addon/node-addon-api -fPIC -pthread -m64 -O3 -fno-omit-frame-pointer -fno-rtti -o nn.so.node nn.cc _.so
 
 node --no-warnings
-> v1=require('./nn.so.node').k("+",[2,2.3])
+
+\> v1=require('./nn.so.node').k("+",[2,2.3])
+
 4.3
-> v1
+
+\> v1
+
 4.3
-> console.log(v1)
+
+\> console.log(v1)
+
 4.3
+
 undefined
-> typeof v1
+
+\> typeof v1
+
 'number'
+
+
