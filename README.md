@@ -8,6 +8,9 @@ node relies on V8(C++, where there is no up-to-date and stable C wrapper yet). I
  
 
 * Setup
+
+Get k9 so from https://shakti.com/download/
+
 OS: Ubuntu 18.04.4 LTS
 
 apt-get install nodejs-dev
