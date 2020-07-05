@@ -23,7 +23,7 @@ No other build env dependencies except g++
 
 * Build and test
 
-g++ -shared -pthread -rdynamic -m64 -I. -I/usr/include/nodejs/include/node -I/usr/include/nodejs/src -I/usr/include/nodejs/deps/uv/include -I/usr/include/nodejs/deps/v8/include -I/YOUR_PATH_node_addon/node-addon-api -fPIC -pthread -m64 -O3 -fno-omit-frame-pointer -fno-rtti -o nn.so.node nn.cc _.so
+g++ -shared -pthread -rdynamic -m64 -I. -I/usr/include/nodejs/include/node -I/usr/include/nodejs/src -I/usr/include/nodejs/deps/uv/include -I/usr/include/nodejs/deps/v8/include -I/YOUR_PATH_to_node_addon/node-addon-api -fPIC -pthread -m64 -O3 -fno-omit-frame-pointer -fno-rtti -Wl,-rpath=K9_SO_RUNTIME_PATH -o nn.so.node nn.cc _.so
 
 node --no-warnings
 
